@@ -10,17 +10,64 @@
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<!--
 <style type="text/css">
-.main{
-	background-color: #3fbdcf;
+@charset "UTF-8";
+body{
+	margin: 0;
 }
+
+#menu ul{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 100%;
+	z-index: 1;
+
+	background-color: #d5166f;
+}
+#menu ul li{
+	width: 20%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+#menu ul li a{
+	width: auto;
+	margin: 0;
+	display: block;
+	padding: 12px 0;
+
+	text-decoration: none;
+	color: #000;
+}
+#menu ul li a:hover{
+	background: #cd719c;
+}
+#menu{
+	list-style: none;
+}
+.main{
+	height: 100vh;
+	background-color: #259ebe;
+	text-align: center;
+}
+footer{
+	background-color: #393939;
+}
+
+@@media screen and (max-width: 800px) {
+
+}
+
 </style>
--->
 
 <body>
 	<header>
-		<nav>
+		<nav id="menu">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">このサイトについて</a></li>
