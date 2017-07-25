@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.up{
+    text-align: center;
+}
+.logup{
+    margin: 0.5em;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+.submit{
+    margin: 0.5em;
+    padding: 0.5em;
+
+    border-radius: 10px;        /* CSS3草案 */
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 10px;   /* Firefox用 */
+
+    width: 10em;
+    background-color: #4588cf;
+    color: #ffffff;
+    font-size: 1.3em;
+    border-style:none;
+}
+
+
+
+body{
+	margin: 6em 0 0 0;
+}
+main{
+    height: 80vh;
+}
+.img_left{
+	width: 50%;
+	float: left;
+}
+.test_1{
+	clear: both;
+	border: 2;
+}
+.img_right{
+	width: 50%;
+	float: right;
+}
+.text_center{
+	eeeeeee
+}
+#menu ul{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 100%;
+	z-index: 1;
+
+	background-color: #d5166f;
+}
+#menu ul li{
+	width: 20%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+#menu ul li a{
+	width: auto;
+	margin: 0;
+	display: block;
+	padding: 12px 0;
+
+	text-decoration: none;
+	color: #000;
+}
+#menu ul li a:hover{
+	background: #cd719c;
+}
+#menu{
+	list-style: none;
+}
+.main{
+	height: 30em;
+	background-color: #259ebe;
+	text-align: center;
+	align-items: center;
+}
+.sns_1 p a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer{
+    padding: 1em;
+	background-color: #393939;
+}
