@@ -18,3 +18,4 @@ include_once 'temp/header.php'; ?>
         <input class="submit" type="submit" value="送信">
     </form>
 </main>
+<?php include_once 'temp/footer_log.php'; ?>

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .sin_title{
     font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
 }
@@ -6,6 +7,7 @@
     font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
 }
 .up{
+    margin-top: 3em;
     text-align: center;
 }
 .logup{
@@ -27,8 +29,6 @@
     font-size: 1.3em;
     border-style:none;
 }
-
-
 
 body{
 	margin: 6em 0 0 0;
