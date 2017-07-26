@@ -2,7 +2,7 @@
 <html land="ja">
 <head>
 	<meta charset="utf-8">
-	<title>out of line</title>
+	<title><?php echo $title; ?></title>
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/font.css">
 	<link type="text/css" rel="stylesheet" href="css/color.css">
