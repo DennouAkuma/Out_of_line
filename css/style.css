@@ -1,5 +1,46 @@
 @charset "UTF-8";
 
+/*--logup--*/
+
+/*-error---*/
+.email{
+    display: none;
+}
+.pass1{
+    display: none;
+}
+.pass2{
+    display: none;
+}
+.error{
+    position: relative;
+    /*display: inline-block;*/
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #ffef99;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.error::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #ffef99;
+}
+/*--error--*/
+
+.logup_form{
+    margin-top: 10em;
+    margin-bottom: auto;
+}
 .sin_title{
     font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
 }
@@ -29,6 +70,8 @@
     font-size: 1.3em;
     border-style:none;
 }
+
+/*--index.html--*/
 
 body{
 	margin: 6em 0 0 0;
