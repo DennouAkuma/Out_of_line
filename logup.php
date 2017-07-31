@@ -9,6 +9,7 @@ include_once 'temp/header.php'; ?>
 
         <!--メールアドレス-->
         <input id="mail" class="logup" type="email" name="email" placeholder="メールアドレス" size="40">
+        <div id="mail_test"></div>
         <div class="email error" id="mail_erro_i">
             <p>これは、メールアドレスではありません</p>
         </div>
