@@ -4,7 +4,7 @@ include_once 'temp/header.php'; ?>
 <header class="up">
 </header>
 <main class="up">
-    <form action="logup_sgin.php" class="logup_form" id="logup">
+    <form action="logup_sgin.php" class="logup_form" id="logup" method="get">
         <h1 class="sin_title">Welcome to Out of line!</h1>
 
         <!--メールアドレス-->
