@@ -6,11 +6,11 @@ if(!$result){
 }
 $row = mysql_fetch_assoc($result);
 if($in_mail == ""){
-
+    echo '<p id="mail_sigin">メールアドレスを入力して下さい</p>';
 }else if($row == null){
-    echo '<p>〇</p>';
+    echo '<p id="mail_sigin">〇</p>';
 }else if($row != null){
-    echo '<p>このメールアドレスは既に登録されています</p>';
+    echo '<p id="mail_sigin">このメールアドレスは既に登録されています</p>';
 }
 
 ?>

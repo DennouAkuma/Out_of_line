@@ -3,8 +3,12 @@
 /*--logup--*/
 
 /*-error---*/
+.null{
+    position: relative;
+}
 .email{
     display: none;
+    position: absolute;
 }
 .pass1{
     display: none;
@@ -13,9 +17,9 @@
     display: none;
 }
 .error{
-    position: relative;
+    /*position: relative;*/
     /*display: inline-block;*/
-    margin: 1.5em 0 1.5em 15px;
+    margin: 0.5em 0 0 15px;
     padding: 7px 10px;
     min-width: 120px;
     max-width: 100%;
@@ -36,6 +40,12 @@
     border-right: 15px solid #ffef99;
 }
 /*--error--*/
+.mail_test{
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
 
 .logup_form{
     margin-top: 10em;

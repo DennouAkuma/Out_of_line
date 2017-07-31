@@ -4,22 +4,20 @@ include_once 'temp/header.php'; ?>
 <header class="up">
 </header>
 <main class="up">
-    <form action="logup_sgin.php" class="logup_form" id="logup" method="get">
+    <form action="logup_sgin.php" class="logup_form" id="logup" method="get" id="from_logup">
         <h1 class="sin_title">Welcome to Out of line!</h1>
 
+        <div id="mail_test"></div>
+        <div class="email error" id="mail_error_i">
+        </div>
+        <div class="pass1 error" id="pass1_error">
+        </div>
         <!--メールアドレス-->
         <input id="mail" class="logup" type="email" name="email" placeholder="メールアドレス" size="40">
-        <div id="mail_test"></div>
-        <div class="email error" id="mail_erro_i">
-            <p>これは、メールアドレスではありません</p>
-        </div>
         </br>
 
         <!--パスワード-->
         <input id="pas1" class="logup" type="password" name="pass1" placeholder="パスワード" size="40">
-        <div class="pass1 error">
-            <p>危険度</p>
-        </div>
         </br>
 
         <!--パスワード確認-->
