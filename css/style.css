@@ -12,13 +12,13 @@
 }
 .pass1{
     display: none;
+    position: absolute;
 }
 .pass2{
     display: none;
+    position: absolute;
 }
 .error{
-    /*position: relative;*/
-    /*display: inline-block;*/
     margin: 0.5em 0 0 15px;
     padding: 7px 10px;
     min-width: 120px;

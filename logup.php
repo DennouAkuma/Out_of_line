@@ -11,6 +11,10 @@ include_once 'temp/header.php'; ?>
         <div class="email error" id="mail_error_i">
         </div>
         <div class="pass1 error" id="pass1_error">
+            <p id="error_pas"></p>
+        </div>
+        <div class="pass2 error" id="pass2_error">
+            <p id="error_pas2">パスワードが一致しません</p>
         </div>
         <!--メールアドレス-->
         <input id="mail" class="logup" type="email" name="email" placeholder="メールアドレス" size="40">
@@ -22,9 +26,6 @@ include_once 'temp/header.php'; ?>
 
         <!--パスワード確認-->
         <input id="pas2" class="logup" type="password" name="pass2" placeholder="パスワード再確認" size="40">
-        <div class="pass2 error">
-            <p class="midasi_1" id="pas2_midasi">パスワードが一致しません</p>
-        </div>
 
         <!--同意-->
         <p class="doui"><input class="check" type="checkbox" name="kiyaku" />
