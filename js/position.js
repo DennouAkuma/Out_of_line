@@ -21,5 +21,5 @@ $(function(){
     var setTop = offsetTop - 10;
     var setLeft = offsetLeft + 390;
     $('#pass2_error').css("top",setTop);
-    $('#pass2_error').css("left",setLeft);
+    $('#pass2   _error').css("left",setLeft);
 });

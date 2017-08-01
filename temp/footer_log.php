@@ -2,7 +2,3 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/Quary.js"></script>
     <script type="text/javascript" src="js/kye.js"></script>
-    <script type="text/javascript" src="js/position.js"></script>
-    <script type="text/javascript" src="js/pass1.js"></script>
-</body>
-</html>

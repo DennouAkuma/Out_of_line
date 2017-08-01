@@ -15,8 +15,7 @@ $email->setSmtpapiTos($tos)->
        setFromName("Out of line Systems")->
        setSubject("Out of lineの登録完了いたしました")->
        addCategory('category1')->
-       addHeader('X-Sent-Using', 'SendGrid-API')->
-       setText("Out of lineへのご登録が完了いたしました。");
+       setText($str_text);
 
 
 $response = $sendgrid->send($email);

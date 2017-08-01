@@ -12,6 +12,7 @@ if(isset($_GET['email'])){
 if(isset($_GET['pass1'])){
     $pass = $_GET['pass1'];
 }
+$str_text = "登録が完了しました";
 
 include 'php/table.php';
 include 'php/insert_logup.php';
