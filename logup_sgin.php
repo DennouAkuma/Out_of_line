@@ -14,7 +14,8 @@ if(isset($_GET['pass1'])){
 }
 
 include 'php/table.php';
-include 'php/insert_logup.php'
+include 'php/insert_logup.php';
+include 'php/mail_send.php';
 ?>
 <main>
     <h2>登録が完了しました</h2>

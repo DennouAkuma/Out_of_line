@@ -24,7 +24,6 @@ $(function() {
         if(pass1 === pass2){
             this.submit();
         }else{
-            $('.pass2').css('display', 'inline-block');
             return false;
         }
     });

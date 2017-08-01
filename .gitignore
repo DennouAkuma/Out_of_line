@@ -1,2 +1,6 @@
+.env
+php/.env
+.DS_Store
+sendgridjp-php-example/
 root/
 php/root/
