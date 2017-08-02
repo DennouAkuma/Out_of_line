@@ -2,7 +2,7 @@
     $file_name0 = "admin/".$str_2.".php";
     $file_name = $file_name0;
     if(!file_exists($file_name)){
-        echo '<p>ユーザーファイルの生成が完了いたしました</p>';
+        //echo '<p>ユーザーファイルの生成が完了いたしました</p>';
         $fp = fopen( $file_name, 'w');
         fwrite($fp,"<?php include '../php/user_file_str.php'; ?>");
         fclose($fp);

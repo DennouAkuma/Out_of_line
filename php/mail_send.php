@@ -6,7 +6,7 @@ $api_key           = $root_api_key;
 $from              = $root_from;
 $tos               = array($email);
 
-echo '<p>'.$tos[0].'</p>';
+//echo '<p>'.$tos[0].'</p>';
 
 $sendgrid = new SendGrid($api_key, array("turn_off_ssl_verification" => true));
 $email    = new SendGrid\Email();

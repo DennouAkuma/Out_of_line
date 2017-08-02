@@ -21,7 +21,7 @@ $str_text = "http://localhost/outofline/201708021001/admin/".$str_2.".php";
 include 'php/mail_send.php';
 include 'php/user_file.php';
 ?>
-<main>
+<main class="up">
     <h2>登録が完了しました</h2>
     <p>確認メールを送信いたしました。確認を行ってください。</p>
 </main>

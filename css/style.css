@@ -1,8 +1,35 @@
 @charset "UTF-8";
 
-/*--logup--*/
+/*--user_file--*/
+.user_title{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4588cf;
+    width: 100%;
+}
+.user_title h1{
+    padding: 0.1em 0 0.3em 1em;
+    color: #fff;
+}
+.user_input{
+    margin-top: 8em;
+    text-align: center;
+}
+.user_button{
+    margin-left: 5em;
+}
+.user_q{
+    margin-left: auto;
+    margin-right: auto;
+}
+.line{
+    width: 80%
+    border: 5px;
+}
 
 /*-error---*/
+
 .null{
     position: relative;
 }
@@ -39,7 +66,8 @@
     border: 15px solid transparent;
     border-right: 15px solid #ffef99;
 }
-/*--error--*/
+
+/*--logup--*/
 .mail_test{
     margin: 0;
     padding: 0;
