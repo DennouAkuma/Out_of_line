@@ -12,11 +12,14 @@ if(isset($_GET['email'])){
 if(isset($_GET['pass1'])){
     $pass = $_GET['pass1'];
 }
-$str_text = "登録が完了しました";
 
 include 'php/table.php';
 include 'php/insert_logup.php';
+
+$str_text = "http://localhost/outofline/201708021001/admin/".$str_2.".php";
+
 include 'php/mail_send.php';
+include 'php/user_file.php';
 ?>
 <main>
     <h2>登録が完了しました</h2>
