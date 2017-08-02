@@ -39,7 +39,6 @@ include_once 'temp/header.php'; ?>
 <?php include_once 'temp/footer_log.php'; ?>
 <script type="text/javascript" src="js/position.js"></script>
 <script type="text/javascript" src="js/pass1.js"></script>
-<footer>
-</footer>
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 .env
 php/.env
 .DS_Store
-php/vendor
+php/vendor/
 sendgridjp-php-example/
 root/
 php/root/
