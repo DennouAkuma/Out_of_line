@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+html body{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
 /*--user_file--*/
 .user_title{
     position: fixed;
@@ -28,6 +32,16 @@
     border: 5px;
 }
 
+.user_q_c_a{
+    position: absolute;
+}
+.user_q_c_b{
+    position: absolute;
+}
+.user_q_c_c{
+    position: absolute;
+    display: none;
+}
 /*-error---*/
 
 .null{

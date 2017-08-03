@@ -15,21 +15,21 @@ include '../php/select_id.php';
     </nav>
 
     <form class="user_input">
-        <div class="user_q" id="user_q_a">
-            <input class="logup" type="text" size="40" placeholder="ユーザー名を入力してください"></br>
-            <input class="logup" type="text" size="40" placeholder="姓を入力してください"></br>
-            <input class="logup" type="text" size="40" placeholder="名を入力してください"></br>
-            <button class="submit user_button" type="button">次へ</button>
+        <div class="user_q_c_a" id="user_q_a">
+            <input class="logup" type="text" size="40" placeholder="ユーザー名を入力してください"><br/>
+            <input class="logup" type="text" size="40" placeholder="姓を入力してください"><br/>
+            <input class="logup" type="text" size="40" placeholder="名を入力してください"><br/>
+            <button id="next_1" class="submit user_button" type="button">次へ</button>
         </div>
-        <div class="user_q" id="user_q_b">
-            <input class="logup" type="text" size="40" placeholder="郵便番号を入力してください"></br>
-            <input class="logup" type="text" size="40" placeholder="住所を入力してください"></br>
-            <input class="logup" type="text" size="40" placeholder="生年月日を入力してください"></br>
-            <input class="logup" type="text" size="40" placeholder="性別を入力してください"></br>
-            <button class="submit" type="button">戻る</button>
-            <button class="submit" type="button">次へ</button>
+        <div class="user_q_c_b" id="user_q_b">
+            <input class="logup" type="text" size="40" placeholder="郵便番号を入力してください"><br/>
+            <input class="logup" type="text" size="40" placeholder="住所を入力してください"><br/>
+            <input class="logup" type="text" size="40" placeholder="生年月日を入力してください"><br/>
+            <input class="logup" type="text" size="40" placeholder="性別を入力してください"><br/>
+            <button id="back_1" class="submit" type="button">戻る</button>
+            <button id="next_2" class="submit" type="button">次へ</button>
         </div>
-        <div class="user_q" id="user_q_c">
+        <div class="user_q_c_c" id="user_q_c">
             <table class="user_Kakunin">
                 <tr>
                     <th><h3>ユーザー名</h3></th>
