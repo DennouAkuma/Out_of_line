@@ -29,7 +29,7 @@ include '../php/select_id.php';
             <button id="next_2" class="submit" type="button">次へ</button>
         </div>
         <div id="user_q_c" class="user_q_c_c">
-            <table>
+            <table id="user_q_t" class="user_q_c_t">
                 <tr>
                     <th><h3>ユーザー名</h3></th>
                     <th><p>hogehoge</p></th>

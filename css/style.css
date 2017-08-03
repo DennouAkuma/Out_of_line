@@ -51,6 +51,10 @@ html body{
 }
 .user_q_c_c{
     position: absolute;
+    text-align: center;
+}
+.user_q_c_t{
+    text-align: center;
 }
 /*-error---*/
 
