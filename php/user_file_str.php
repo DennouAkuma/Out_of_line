@@ -13,7 +13,6 @@ include '../php/select_id.php';
     <nav class="user_title">
         <h1>ユーザ情報登録</h1>
     </nav>
-
     <form class="user_input">
         <div class="user_q_c_a" id="user_q_a">
             <input class="logup" type="text" size="40" placeholder="ユーザー名を入力してください"><br/>
@@ -29,8 +28,8 @@ include '../php/select_id.php';
             <button id="back_1" class="submit" type="button">戻る</button>
             <button id="next_2" class="submit" type="button">次へ</button>
         </div>
-        <div class="user_q_c_c" id="user_q_c">
-            <table class="user_Kakunin">
+        <div id="user_q_c" class="user_q_c_c">
+            <table>
                 <tr>
                     <th><h3>ユーザー名</h3></th>
                     <th><p>hogehoge</p></th>
@@ -56,10 +55,12 @@ include '../php/select_id.php';
                     <th><p>hogehoge</p></th>
                 </tr>
             </table>
+            <button id="back_2" class="submit" type="button">戻る</button>
+            <button id="next_3" class="submit" type="button">次へ</button>
         </div>
     </form>
-    <hr class="test_1">
-    <hr class="line">
+    <hr id="bar1" class="status_c_bar bar_c_a" />
+    <hr id="bar2" class="status_c_bar bar_c_b" />
 </main>
 <?php include '../temp/footer_admin.php'; ?>
 <script type="text/javascript" src="../js/user_input.js"></script>
