@@ -1,5 +1,5 @@
 @charset "UTF-8";
-html body{
+.admin_html .admin_body{
     position: relative;
     width: 100%;
     overflow-x: hidden;
@@ -126,9 +126,9 @@ html body{
     margin: 0.5em;
     padding: 0.5em;
 
-    border-radius: 10px;        /* CSS3草案 */
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
-    -moz-border-radius: 10px;   /* Firefox用 */
+    border-radius: 20px;        /* CSS3草案 */
+    -webkit-border-radius: 20px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 20px;   /* Firefox用 */
 
     width: 10em;
     background-color: #4588cf;

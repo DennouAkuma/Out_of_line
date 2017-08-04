@@ -1,5 +1,5 @@
 <!doctype html>
-<html land="ja">
+<html class="admin_html" land="ja">
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
@@ -9,4 +9,4 @@
 	<link type="text/css" rel="stylesheet" href="../css/other.css">
 	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-<body>
+<body class="admin_body">

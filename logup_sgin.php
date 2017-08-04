@@ -1,6 +1,7 @@
 
 <?php
 $title = "登録完了";
+$status_admin = 10;
 include 'temp/header.php';
 include 'root/root.php';
 include 'php/mysql_send.php';
@@ -18,6 +19,7 @@ include 'php/insert_logup.php';
 
 $str_text = "http://localhost/outofline/201708021001/admin/".$str_2.".php";
 
+include 'temp/touroku_html.php';
 include 'php/mail_send.php';
 include 'php/user_file.php';
 ?>

@@ -15,8 +15,7 @@ $email->setSmtpapiTos($tos)->
        setFromName("Out of line Systems")->
        setSubject("Out of lineの登録完了いたしました")->
        addCategory('category1')->
-       setText($str_text);
-
+       setHtml($str_mail_content);
 
 $response = $sendgrid->send($email);
 //$response);
