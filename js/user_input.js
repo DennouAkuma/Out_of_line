@@ -23,7 +23,7 @@ $(function(){
 
     window_wid -= width_user_bar1;
     window_wid /= 2;
-    Height_user_q_c += offsetTop
+    Height_user_q_c += offsetTop;
 
     $('#bar1').css("left",window_wid);
     $('#bar2').css("left",window_wid);
@@ -52,6 +52,21 @@ $(function(){
     });
 
     $('#next_2').click(function(){
+        var user = $('#User_in').val();
+        var Fast = $('#Fast_in').val();
+        var Last = $('#Last_in').val();
+        var Post = $('#Post_in').val();
+        var Addr = $('#Addr_in').val();
+        var Birt = $('#Birt_in').val();
+        var Sex = $('#Sex_in').val();
+
+        $('#user_ou').text(user);
+        $('#name_ou').text(Last + Fast);
+        $('#post_ou').text(Post);
+        $('#addr_ou').text(Addr);
+        $('#birt_ou').text(Birt);
+        $('#sex_ou').text(Sex);
+
         $('#user_q_b').animate({'left' : -width_user_q_b}, 600);
         $('#user_q_c').animate({'left' : 0}, 600);
         $('#bar2').animate({'width' : "40%"}, 600);

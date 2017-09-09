@@ -15,16 +15,16 @@ include '../php/select_id.php';
     </nav>
     <form class="user_input">
         <div class="user_q_c_a" id="user_q_a">
-            <input class="logup" type="text" size="40" placeholder="ユーザー名を入力してください"><br/>
-            <input class="logup" type="text" size="40" placeholder="姓を入力してください"><br/>
-            <input class="logup" type="text" size="40" placeholder="名を入力してください"><br/>
+            <input id="User_in" class="logup" type="text" size="40" placeholder="ユーザー名を入力してください"><br/>
+            <input id="Last_in" class="logup" type="text" size="40" placeholder="姓を入力してください"><br/>
+            <input id="Fast_in" class="logup" type="text" size="40" placeholder="名を入力してください"><br/>
             <button id="next_1" class="submit user_button" type="button">次へ</button>
         </div>
         <div class="user_q_c_b" id="user_q_b">
-            <input class="logup" type="text" size="40" placeholder="郵便番号を入力してください"><br/>
-            <input class="logup" type="text" size="40" placeholder="住所を入力してください"><br/>
-            <input class="logup" type="text" size="40" placeholder="生年月日を入力してください"><br/>
-            <input class="logup" type="text" size="40" placeholder="性別を入力してください"><br/>
+            <input id="Post_in" class="logup" type="text" size="40" placeholder="郵便番号を入力してください"><br/>
+            <input id="Addr_in" class="logup" type="text" size="40" placeholder="住所を入力してください"><br/>
+            <input id="Birt_in" class="logup" type="text" size="40" placeholder="生年月日を入力してください"><br/>
+            <input id="Sex_in" class="logup" type="text" size="40" placeholder="性別を入力してください"><br/>
             <button id="back_1" class="submit" type="button">戻る</button>
             <button id="next_2" class="submit" type="button">次へ</button>
         </div>
@@ -32,31 +32,31 @@ include '../php/select_id.php';
             <table id="user_q_t" class="user_q_c_t">
                 <tr>
                     <th><h3>ユーザー名</h3></th>
-                    <th><p>hogehoge</p></th>
+                    <th><h3 id="user_ou">hogehoge</h3></th>
                 </tr>
                 <tr>
                     <th><h3>名前</h3></th>
-                    <th><p>hogehoge</p></th>
+                    <th><h3 id="name_ou">hogehoge</h3></th>
                 </tr>
                 <tr>
                     <th><h3>郵便番号</h3></th>
-                    <th><p>hogehoge</p></th>
+                    <th><h3 id="post_ou">hogehoge</h3></th>
                 </tr>
                 <tr>
                     <th><h3>住所</h3></th>
-                    <th><p>hogehoge</p></th>
+                    <th><h3 id="addr_ou">hogehoge</h3></th>
                 </tr>
                 <tr>
                     <th><h3>生年月日</h3></th>
-                    <th><p>hogehoge</p></th>
+                    <th><h3 id="birt_ou">hogehoge</h3></th>
                 </tr>
                 <tr>
                     <th><h3>性別</h3></th>
-                    <th><p>hogehoge</p></th>
+                    <th><h3 id="sex_ou">hogehoge</h3></th>
                 </tr>
             </table>
             <button id="back_2" class="submit" type="button">戻る</button>
-            <button id="next_3" class="submit" type="button">次へ</button>
+            <button id="next_3" class="submit" type="button">送信</button>
         </div>
     </form>
     <hr id="bar1" class="status_c_bar bar_c_a" />

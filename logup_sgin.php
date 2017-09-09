@@ -17,7 +17,7 @@ if(isset($_GET['pass1'])){
 include 'php/table.php';
 include 'php/insert_logup.php';
 
-$str_text = "http://localhost/outofline/201708021001/admin/".$str_2.".php";
+$str_text = "http://localhost/outofline/201709021735_Dennou/admin/".$str_2.".php";
 
 include 'temp/touroku_html.php';
 include 'php/mail_send.php';
