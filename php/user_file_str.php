@@ -23,8 +23,23 @@ include '../php/select_id.php';
         <div class="user_q_c_b" id="user_q_b">
             <input id="Post_in" class="logup" type="text" size="40" placeholder="郵便番号を入力してください"><br/>
             <input id="Addr_in" class="logup" type="text" size="40" placeholder="住所を入力してください"><br/>
-            <input id="Birt_in" class="logup" type="text" size="40" placeholder="生年月日を入力してください"><br/>
-            <input id="Sex_in" class="logup" type="text" size="40" placeholder="性別を入力してください"><br/>
+
+            <label>生年月日</label>
+            <select id="year_in">
+                <option value="Null">--年--</option>
+            </select>
+            <select id="mon_in">
+                <option value="Null">--月--</option>
+            </select>
+            <select id="day_in">
+                <<option value="Null">--日--</option>>
+            </select><br/>
+
+            <label>性別</label>
+            <select id="Sex_in">
+                <option>男性</option>
+                <option>女性</option>
+            </select><br/>
             <button id="back_1" class="submit" type="button">戻る</button>
             <button id="next_2" class="submit" type="button">次へ</button>
         </div>

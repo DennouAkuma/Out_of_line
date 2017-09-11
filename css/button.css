@@ -1,0 +1,31 @@
+.submit1{
+    margin: 0.5em;
+    padding: 0.5em;
+
+    border-radius: 20px;        /* CSS3草案 */
+    -webkit-border-radius: 20px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 20px;   /* Firefox用 */
+
+    width: 10em;
+    background-color: #4588cf;
+    color: #ffffff;
+    font-size: 1em;
+    border-style:none;
+}
+
+.submit2{
+    margin: 0.5em;
+    padding: 0.5em;
+
+    border-radius: 20px;        /* CSS3草案 */
+    -webkit-border-radius: 20px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 20px;   /* Firefox用 */
+
+    width: 10em;
+    background-color: #fff;
+    color: #4588cf;
+    font-size: 1em;
+
+    border-style: solid;
+    border-color: #4588cf;
+}

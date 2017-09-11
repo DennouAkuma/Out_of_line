@@ -7,6 +7,7 @@
 	<link type="text/css" rel="stylesheet" href="css/font.css">
 	<link type="text/css" rel="stylesheet" href="css/color.css">
 	<link type="text/css" rel="stylesheet" href="css/other.css">
+	<link type="text/css" rel="stylesheet" href="css/button.css">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>

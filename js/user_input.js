@@ -14,12 +14,43 @@ $(function(){
 
     var offsetTop = $('#user_q_a').offset().top;
     var offsetLeft = $('#user_q_a').offset().left;
+
     console.log(width_body);
     console.log(width_user_q_a);
     console.log(width_user_q_b);
     //console.log(width_user_q_c);
     console.log(offsetTop);
     console.log(offsetLeft);
+
+    //日付取得
+    var date = new Date();
+    var Year = parseInt(date.getFullYear());
+    var Year_ou = Year - 100;
+
+    console.log(Year_ou);
+    for(var i = Year ; i >= Year_ou ; i--){
+        $('#year_in').append('<option value=' + i + '>' + i + '</option>');
+    }
+    for(var d = 1 ; d <= 12 ; d++){
+        console.log(d);
+        $('#mon_in').append('<option value=' + d + '>' + d + '</option>');
+    }
+
+    $('#year_in').change(function(){
+        var Year_ch = parseInt($(this).val());
+        var mon_ch = parseInt($('#mon_ch').val());
+
+        if((Year_ch % 400 == 0) || ((Year_ch % 4 == 0) && (Year_ch % 100 != 0))){
+            var last_1 = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            for(var m = 1 ; m <= last_1[mon_ch - 1] ; m++){
+                $('#day_in').append('<option value=' + m + '>' + m + '</option>');
+            }
+        }else{
+            var last_2 = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+        }
+    });
+
+
 
     window_wid -= width_user_bar1;
     window_wid /= 2;

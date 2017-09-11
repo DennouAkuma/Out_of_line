@@ -1,4 +1,4 @@
-<?php
+""<?php
 $str = "select ".$mail." from ".$useA_table." where ".$mail." like '".$in_mail."'";
 $result = mysql_query($str);
 if(!$result){
