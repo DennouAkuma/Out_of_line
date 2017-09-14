@@ -4,7 +4,7 @@ include_once 'temp/header.php'; ?>
 <header class="up">
 </header>
 <main class="up">
-    <form class="logup_form" id="login" method="post" id="from_logup">
+    <form action="change_login.php" class="logup_form" id="login" method="post" id="from_logup">
         <h1 class="sin_title">Welcome to Out of line!</h1>
 
         <div id="mail_test"></div>
@@ -23,7 +23,7 @@ include_once 'temp/header.php'; ?>
         </br>
 
         <!--保存-->
-        <p class="doui"><input class="check" type="checkbox" name="kiyaku" />
+        <p class="doui"><input id="status_login" value="true" class="check" type="checkbox" name="kiyaku" />
         パスワードを保存しますか？</p>
 
         <input class="submit" type="reset" value="リセット">
@@ -31,6 +31,5 @@ include_once 'temp/header.php'; ?>
     </form>
 </main>
 <?php include_once 'temp/footer_login.php'; ?>
-<script type="text/javascript" src="js/Quary_login.js"></script>
 <script type="text/javascript" src="js/Quary_login.js"></script>
 <?php include 'temp/footer_no.html';?>
