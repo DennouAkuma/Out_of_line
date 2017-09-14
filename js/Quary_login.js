@@ -6,14 +6,23 @@ $(function() {
         var flag = false;
 
         $.ajax({
-            type: "GET";
-            url: "select_login.php";
+            url: 'select_login.php',
+            type: 'GET',
             data: {'mail' : mail_e,
                    'pass' : pass},
             success: function(data){
-                flag = <?php $flag_php ?>
+                if(data == 1){
+                    flag = true;
+                }else{
+                    flag = false;
+                }
+                if(flag == false){
+                    console.log('Null potion Error');
+                    return false;
+                }else if(flag == true){
+                    console.log('yes');
+                }
             }
         });
-
     });
 });

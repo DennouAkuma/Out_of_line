@@ -7,11 +7,11 @@ include 'root/root.php';
 include 'php/mysql_send.php';
 include 'php/database.php';
 
-if(isset($_GET['email'])){
-    $email = $_GET['email'];
+if(isset($_POST['email'])){
+    $email = $_POST['email'];
 }
-if(isset($_GET['pass1'])){
-    $pass = $_GET['pass1'];
+if(isset($_POST['pass1'])){
+    $pass = $_POST['pass1'];
 }
 
 include 'php/table.php';
