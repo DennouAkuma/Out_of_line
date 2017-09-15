@@ -52,12 +52,22 @@
 .user_q_c_c{
     position: absolute;
     text-align: center;
+    margin:0 auto;
 }
+.user_q_c_d{
+    position: absolute;
+}
+
 .user_q_c_t{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-/*-error---*/
-
+/*--error--*/
+.error_div{
+    margin: 0;
+    padding: 0;
+}
 .null{
     position: relative;
 }
@@ -93,6 +103,39 @@
     margin-top: -15px;
     border: 15px solid transparent;
     border-right: 15px solid #ffef99;
+}
+
+.user_error{
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #555;
+    font-size: 16px;
+    background: #ffef99;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.user_error p{
+    color: #ff0000;
+}
+#User_in_er{
+    display: none;
+}
+#Last_in_er{
+    display: none;
+}
+#Fast_in_er{
+    display: none;
+}
+#Post_in_er{
+    display: none;
+}
+#Addr_in_er{
+    display: none;
+}
+#Birt_in_er{
+    display: none;
 }
 
 /*--logup--*/
