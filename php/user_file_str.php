@@ -104,7 +104,7 @@ include '../php/select_id.php';
             <button id="next_3" class="submit" type="button">送信</button>
         </div>
         <div class="user_q_c_d" id="user_q_d">
-            <h1>送信が完了いたしました</h1>
+            <h1 id="touroku"></h1>
             <button id="next_4" class="submit user_button" type="button">Homeに戻る</button>
         </div>
     </form>

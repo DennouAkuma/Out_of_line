@@ -193,18 +193,38 @@ $(function(){
     });
 
     $('#next_3').click(function(){
-        function user_data(){
+        var User = $('#User_in').val();
+        var Fast = $('#Fast_in').val();
+        var Last = $('#Last_in').val();
+        var Post = $('#Post_in').val();
+        var Addr = $('#Addr_in').val();
+        var Year_ou = $('#year_in').val();
+        var Mon_ou = $('#mon_in').val();
+        var Day_ou = $('#day_in').val();
+        var Sex = $('#Sex_in').val();
 
+        function user_data(){
             var result = $.ajax({
                 url: '../php/user_data.php',
                 type: 'GET',
                 dataType: 'jsonp',
                 data: {
-                    ''
-                }
-            })
+                    'user' : User,
+                    'fast' : Fast,
+                    'last' : Last,
+                    'post' : Post,
+                    'addr' : Addr,
+                    'year_ou' : Year_ou,
+                    'mon_ou' : Mon_ou,
+                    'day_ou' : Day_ou,
+                    'sex' : Sex
+                },
+                async: false
+            }).responseText;
+            return result;
         }
-        
+        $('#touroku').text(user_data());
+
         $('#user_q_c').animate({'left' : -width_user_q_c}, 600);
         $('#user_q_d').animate({'left' : 0}, 600);
         $('#bar2').animate({'width' : "60%"}, 600);
