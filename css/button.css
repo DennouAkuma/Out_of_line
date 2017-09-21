@@ -42,7 +42,22 @@
     background-color: #fff;
     color: #4588cf;
     font-size: 0.8em;
-    
+
     border-style: solid;
     border-color: #4588cf;
+}
+
+.submit4{
+    margin: 0.8em;
+    padding: 0.8em;
+
+    border-radius: 15px;        /* CSS3草案 */
+    -webkit-border-radius: 15px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 15px;   /* Firefox用 */
+
+    width: 15em;
+    background-color: #4588cf;
+    font-size: 0.8em;
+    color: #fff;
+    border-style: none;
 }

@@ -105,7 +105,7 @@ include '../php/select_id.php';
         </div>
         <div class="user_q_c_d" id="user_q_d">
             <h1 id="touroku"></h1>
-            <button id="next_4" class="submit user_button" type="button">Homeに戻る</button>
+            <button id="load" class="submit user_button" type="button">Homeに戻る</button>
         </div>
     </form>
     <hr id="bar1" class="status_c_bar bar_c_a" />

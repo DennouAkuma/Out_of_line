@@ -1,1 +1,0 @@
-<?php include '../php/user_file_str.php'; ?>

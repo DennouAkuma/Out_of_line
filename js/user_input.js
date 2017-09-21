@@ -107,7 +107,7 @@ $(function(){
         if(Last == ""){
             $('#Last_in_er').css('display', 'inline-block');
         }else{
-            $('#Last_in_er').css('display', 'none')
+            $('#Last_in_er').css('display', 'none');
         }
         if(User == "" || Fast == "" || Last == ""){
             return;
@@ -228,5 +228,9 @@ $(function(){
         $('#user_q_c').animate({'left' : -width_user_q_c}, 600);
         $('#user_q_d').animate({'left' : 0}, 600);
         $('#bar2').animate({'width' : "60%"}, 600);
+    });
+
+    $('#load').click(function(){
+        location.reload();
     });
 });
