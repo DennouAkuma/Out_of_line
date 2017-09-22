@@ -1,4 +1,8 @@
 $(function(){
+    var question_number = 1;
+
+    var select_number
+
     var width_menu = $('#user_menu').innerWidth();
     var width_menu_side = $('#user_menu_side').innerWidth();
 
@@ -35,11 +39,15 @@ $(function(){
         e.stopPropagation();
     });
 
-    $('#que_img_move').click(function(){
+    $('#que_img_move_bt').click(function(){
         $('#que_img_move_add').css('display', 'inline-block');
+        $('#que_img_move_bt').css('display', 'none');
     });
     $('#batu_ico').click(function(){
         $('#que_img_move_add').css('display', 'none');
+        $('#img_display').css('display', 'inline-block');
+        $('#que_img_move_bt').css('display', 'inline-block');
+        $('#img_preview').empty();
     });
 
     $('#que_add').click(function(){
@@ -58,8 +66,40 @@ $(function(){
     });
     $('#que_img_move_add').on('drop', function(e){
         e.preventDefault();
-        files = e.originalEvent.dataTransfer.files;
-        console.log(files[0].name);
+        files = e.originalEvent.dataTransfer.files[0];
+        console.log(files.name);
+        console.log(files.size);
+        console.log(files.type);
+
+        $('#img_preview').css('display', 'inline-block');
+        $('#img_display').css('display', 'none');
+
+        if(files.type == 'image/jpeg' || files.type == 'image/png'){
+            console.log('画像です');
+            url = URL.createObjectURL(files);
+            $('#img_preview').append('<img  class="img_size" src="' + url + '">');
+        }
+        /*
+        var file = e.originalEvent.dataTransfer.files[0];
+        var formData = new FormData();
+        formData.append('file', file);
+
+        $.ajax('../php/img_upload.php', {
+            method: 'POST',
+            contentType: false,
+            processData: false,
+            data:formData,
+            error: function(xhr, error) {
+                console.log('アップデートに失敗しました');
+                console.log(error);
+            },
+            success: function(response) {
+                console.log('アップロードに成功しました');
+                console.log(response);
+            }
+
+        });
+        */
     });
     //--ファイルがいドラック＆ドロップ
     $(document).on('dragenter', function (e)
@@ -78,4 +118,8 @@ $(function(){
         e.preventDefault();
     });
 
+    //--select追加
+    $('#select_add_bt').click(function(){
+
+    });
 });
