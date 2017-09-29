@@ -59,56 +59,8 @@ $status_user = $row[$status];
     </div>
 </header>
 <main id="user_main">
-    <div id="question-overlay">
-        <div id="question_moder">
-            <ul>
-                <li>
-                    <label>タイトル
-                        <input type="text" size="40" placeholder="タイトルを入力してください" />
-                    </label>
-                </li>
-                <li>
-                    <label>Q1
-                        <input type="text" size="40" placeholder="Q1の質問内容を入力してください" />
-                    </label>
-                </li>
-
-                <li id="que_img_move_add">
-                    <div  id="batu_ico_div">
-                        <img id="batu_ico" src="../img/batu.png">
-                    </div>
-                    <div id="img_display">
-                        <p>ここに画像・動画をドロップしてください</p>
-                        <!--<input id="file_up" class="submit5" type="file">-->
-                        <p>※ただし動画の大きさは50MB・画像は10MBまでです。</p>
-                    </div>
-                    <div id="img_preview">
-                    </div>
-                </li>
-                <li id="que_img_move">
-                    <button id="que_img_move_bt" class="submit4">画像・動画を追加</button>
-                    <button id="select_add_bt" class="submit4">セレクト</button>
-                </li>
-                <li>
-                    <button class="submit4">チェックボックス</button>
-                    <button class="submit4">テキスト</button>
-                </li>
-                <li>
-                    <label>
-                        質問人数
-                        <input type="text" size="10" placeholder="最大100人">
-                    </label>
-                    <label>
-                        ポイント数
-                        <input type="text" size="10" placeholder="最大10pt">
-                    </label>
-                </li>
-                <li>
-                    <button id="#question_cansel" class="submit4">キャンセル</button>
-                    <button class="submit4">作成</button>
-                </li>
-            </ul>
-        </div>
+    <div id="question_moder">
+        <?php include '../php/question_temp.php' ?>
     </div>
     <div>
         <?php

@@ -307,30 +307,43 @@ footer{
     padding-left: 4em;
     list-style-type: none;
 }
-#question_moder{
+
+
+.question-overlay{
+    z-index: 2;
+    display: none;
     position: fixed;
-    z-index: 3;
-    width: 50%;
-    background-color: #fff;
-    display:none;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 10em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,0.75);
+}
+#question_moder{
+    position: relative;
+    display: none;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
     border-radius: 2em;        /* CSS3草案 */
     -webkit-border-radius: 2em;    /* Safari,Google Chrome用 */
     -moz-border-radius: 2em;
+    background: #fff;
+    overflow: auto;
 }
-#question-overlay{
-	z-index:2;
+.moder_wrap{
+    z-index: 3;
     display: none;
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100vh;
-	background: rgba(0, 0, 0, 0.5);
-    overflow:auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
+
 
 #que_img_move_add p{
     color: #a6a6a6;
@@ -371,4 +384,20 @@ footer{
 }
 .img_size{
 width: 100%;
+}
+
+#que_add{å
+}
+
+#que_img_move_bt{
+    display: none;
+}
+#select_add_bt{
+    display: none ;
+}
+#checkbox_add_bt{
+    display: none;
+}
+#text_add_bt{
+    display: none;
 }

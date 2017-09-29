@@ -1,0 +1,56 @@
+<!DOCTYPE >
+<html lang="ja">
+<head>
+</head>
+<style>
+.test1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #aaccee;
+    width: 100%;
+    height: 100vh;
+    overflow:auto;
+}
+</style>
+<body>
+    </header>
+    <header>
+    <main>
+        <div id="question-overlay">
+            <div id="question_moder">
+                <ul>
+                    <div id="1">1つめの要素</div>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(document).on("click",".test1",(function(e){
+        alert("test");
+        e.stopPropagation();
+        e.preventDefault();
+    }));
+    $("#1").click(function(e){
+      $("#1").after("<div class=\"2\">２つ目の要素追加</div>");
+      e.stopPropagation();
+    });
+
+    $("#1").click(function(e){
+      alert("1つ目の要素クリック");
+      e.stopPropagation();
+    });
+
+    $('body').on("click", ".2", (function(e){
+      alert("2つ目の要素クリック");
+      e.stopPropagation();
+    }));
+});
+</script>
+</html>

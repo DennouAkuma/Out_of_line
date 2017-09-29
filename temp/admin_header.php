@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="admin_html" land="ja">
 <head>
 	<meta charset="utf-8">
